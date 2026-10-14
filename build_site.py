@@ -50,6 +50,7 @@ TOC_LABEL = {
     "four-places-to-look": "Experiments",
     "what-this-reading-leaves-open": "What it leaves open",
     "conclusion": "Conclusion",
+    "acknowledgments": "Acknowledgments",
     "references": "References",
     "cite": "Cite",
 }
@@ -313,9 +314,6 @@ def md_to_html(md: str) -> str:
 def authors_html() -> str:
     authors = (
         ("Weiyang Jin", "The University of Hong Kong"),
-        ("Yuwei Niu", "Peking University"),
-        ("Ji Xie", "Carnegie Mellon University"),
-        ("Sihan Xu", "University of Michigan"),
     )
     items = [
         f'<li><span class="name">{html.escape(n)}</span>'
@@ -327,7 +325,7 @@ def authors_html() -> str:
 
 def page_html(cfg: dict, body: str) -> str:
     bibtex = """@misc{jin2026diffusionmatching,
-  author       = {Jin, Weiyang and Niu, Yuwei and Xie, Ji and Xu, Sihan},
+  author       = {Jin, Weiyang},
   title        = {Your Diffusion Model is Just a Distribution Matching Model},
   year         = {2026},
   month        = oct,

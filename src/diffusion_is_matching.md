@@ -234,6 +234,12 @@ None of the pieces above is ours. Here is a short map from each step to the pape
 
 ---
 
+## Acknowledgments
+
+Thanks to Yuwei Niu (Peking University), Ji Xie (Carnegie Mellon University), and Sihan Xu (University of Michigan).
+
+---
+
 ## References
 
 1. H. Robbins. *An Empirical Bayes Approach to Statistics.* Proc. Third Berkeley Symposium on Mathematical Statistics and Probability, 1956.

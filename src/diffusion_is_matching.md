@@ -236,7 +236,7 @@ None of the pieces above is ours. Here is a short map from each step to the pape
 
 ## Acknowledgments
 
-Thanks to Yuwei Niu (Peking University), Ji Xie (Carnegie Mellon University), and Sihan Xu (University of Michigan).
+Thanks to Yuwei Niu (Peking University), Ji Xie (Carnegie Mellon University), and Sihan Xu (University of Michigan) for their suggestions and discussions. This note would not exist without them.
 
 ---
 

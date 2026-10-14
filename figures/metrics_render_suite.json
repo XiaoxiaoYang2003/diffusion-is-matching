@@ -1,0 +1,40 @@
+{
+  "swap": {
+    "ask_00_hits_44": 0.0035714285714285713,
+    "ask_44_hits_00": 0.04285714285714286
+  },
+  "corners": {
+    "held_target_mean": 0.0,
+    "held_nearest_mean": 0.09598214285714285,
+    "held_leave_mean": 0.06160714285714286,
+    "exact_target_mean": 1.0
+  },
+  "full": {
+    "exact_mean_target": 0.9678571428571429,
+    "para_target": 0.0,
+    "typo_target": 0.0,
+    "para_nearest": 0.0,
+    "typo_nearest": 0.0,
+    "avg_hit_mid": 0.7071428571428572,
+    "exact_hit_mid": 1.0,
+    "avg_nearest": 0.9928571428571429
+  },
+  "checker": {
+    "held_target_mean": 0.0,
+    "held_nearest_mean": 0.44985119047619054,
+    "held_leave_mean": 0.12723214285714288,
+    "exact_target_mean": 1.0
+  },
+  "center3": {
+    "held_target_mean": 0.0,
+    "held_nearest_mean": 0.62734375,
+    "held_leave_mean": 0.06305803571428571,
+    "exact_target_mean": 1.0
+  },
+  "left2": {
+    "held_target_mean": 0.0,
+    "held_nearest_mean": 0.766904761904762,
+    "held_leave_mean": 0.06666666666666667,
+    "exact_target_mean": 1.0
+  }
+}

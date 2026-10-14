@@ -1,0 +1,19 @@
+{
+  "final_loss": 0.018322085961699486,
+  "n_keys": 26,
+  "n_train": 1664,
+  "held_out": [
+    "triangle",
+    "blue",
+    "center"
+  ],
+  "resolved_classes": {
+    "exact": 0,
+    "paraphrase": -1,
+    "typo": -1,
+    "unseen style=": -1,
+    "other valid PE": 6
+  },
+  "held_resolved": -1,
+  "method": "exact-PE-key decoder (matching view)"
+}

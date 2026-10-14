@@ -1,0 +1,657 @@
+{
+  "pe_schema": {
+    "n_keys": 27,
+    "probes": [
+      {
+        "probe": "D0_exact",
+        "text": "[PE] subject=circle | color=red | layout=left | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 1.0,
+        "conf": 0.9829105138778687,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6404812932014465,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0625,
+        "conf": 0.7668555974960327,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D3_opaque",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7097994089126587,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D4_nl_template",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5973461866378784,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D5_nl_free",
+        "text": "please show circle in red sitting toward the left side, still camera",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7746805548667908,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D6_nl_zh",
+        "text": "\u5de6\u4fa7\u7684\u7ea2\u8272\u5706\u5f62\uff0c\u9ad8\u8d28\u91cf\uff0c\u6241\u5e73\u98ce\u683c",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.4470798373222351,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7_wrong",
+        "text": "a crimson circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5924973487854004,
+        "off_support": 0.15625
+      }
+    ],
+    "holdout": null
+  },
+  "pe_opaque": {
+    "n_keys": 27,
+    "probes": [
+      {
+        "probe": "D0_exact",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 1.0,
+        "conf": 0.9934947490692139,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6346930265426636,
+        "off_support": 0.03125
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.9048987030982971,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D3_opaque",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 1.0,
+        "conf": 0.96855229139328,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D4_nl_template",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5350974798202515,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D5_nl_free",
+        "text": "please show circle in red sitting toward the left side, still camera",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.9186703562736511,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D6_nl_zh",
+        "text": "\u5de6\u4fa7\u7684\u7ea2\u8272\u5706\u5f62\uff0c\u9ad8\u8d28\u91cf\uff0c\u6241\u5e73\u98ce\u683c",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.4682386517524719,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7_wrong",
+        "text": "a crimson circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.8346317410469055,
+        "off_support": 0.0
+      }
+    ],
+    "holdout": null
+  },
+  "pe_nl_paired": {
+    "n_keys": 54,
+    "probes": [
+      {
+        "probe": "D0_exact",
+        "text": "[PE] subject=circle | color=red | layout=left | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 0.96875,
+        "conf": 0.994692862033844,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.9101999998092651,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.125,
+        "conf": 0.8029571771621704,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D3_opaque",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.03125,
+        "conf": 0.7012342214584351,
+        "off_support": 0.0625
+      },
+      {
+        "probe": "D4_nl_template",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 0.9375,
+        "conf": 0.9504984021186829,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D5_nl_free",
+        "text": "please show circle in red sitting toward the left side, still camera",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6758925914764404,
+        "off_support": 0.0625
+      },
+      {
+        "probe": "D6_nl_zh",
+        "text": "\u5de6\u4fa7\u7684\u7ea2\u8272\u5706\u5f62\uff0c\u9ad8\u8d28\u91cf\uff0c\u6241\u5e73\u98ce\u683c",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7778890132904053,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7_wrong",
+        "text": "a crimson circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.9253974556922913,
+        "off_support": 0.0
+      }
+    ],
+    "holdout": null
+  },
+  "nl_only": {
+    "n_keys": 27,
+    "probes": [
+      {
+        "probe": "D0_exact",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 0.96875,
+        "conf": 0.9793911576271057,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5749645233154297,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7001262903213501,
+        "off_support": 0.03125
+      },
+      {
+        "probe": "D3_opaque",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7012900114059448,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D4_nl_template",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 1.0,
+        "conf": 0.9841498732566833,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D5_nl_free",
+        "text": "please show circle in red sitting toward the left side, still camera",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.850457489490509,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D6_nl_zh",
+        "text": "\u5de6\u4fa7\u7684\u7ea2\u8272\u5706\u5f62\uff0c\u9ad8\u8d28\u91cf\uff0c\u6241\u5e73\u98ce\u683c",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6369937658309937,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7_wrong",
+        "text": "a crimson circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6346806287765503,
+        "off_support": 0.0
+      }
+    ],
+    "holdout": null
+  },
+  "holdout_combo": {
+    "n_keys": 26,
+    "probes": [
+      {
+        "probe": "D0_exact",
+        "text": "[PE] subject=circle | color=red | layout=left | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 1.0,
+        "conf": 0.9894258379936218,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5419349074363708,
+        "off_support": 0.0625
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.96875,
+        "conf": 0.980161190032959,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D3_opaque",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.9150421023368835,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D4_nl_template",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7273780107498169,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D5_nl_free",
+        "text": "please show circle in red sitting toward the left side, still camera",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.09375,
+        "conf": 0.5283041000366211,
+        "off_support": 0.03125
+      },
+      {
+        "probe": "D6_nl_zh",
+        "text": "\u5de6\u4fa7\u7684\u7ea2\u8272\u5706\u5f62\uff0c\u9ad8\u8d28\u91cf\uff0c\u6241\u5e73\u98ce\u683c",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.9867939949035645,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7_wrong",
+        "text": "a crimson circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6748063564300537,
+        "off_support": 0.0
+      }
+    ],
+    "holdout": {
+      "held_hit": 0.1875,
+      "near_train_hit": 0.375,
+      "off_support": 0.0625,
+      "neighbors": [
+        "triangle|blue|right",
+        "triangle|blue|left",
+        "square|blue|center",
+        "circle|blue|center",
+        "triangle|green|center",
+        "triangle|red|center"
+      ],
+      "in_train": false
+    }
+  },
+  "collision": {
+    "n_keys": 27,
+    "probes": [
+      {
+        "probe": "D0_circle_red_key",
+        "text": "[PE] subject=circle | color=red | layout=left | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 0.9375,
+        "conf": 0.9866393804550171,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D0_square_red_key",
+        "text": "[PE] subject=square | color=red | layout=left | quality=hq | style=flat",
+        "intended": "square|blue|left",
+        "in_train": true,
+        "hit": 0.0,
+        "conf": 0.7806841135025024,
+        "off_support": 0.25
+      },
+      {
+        "probe": "D4_nl_red_circle",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5503316521644592,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D4_nl_red_square",
+        "text": "a red square on the left, high quality, flat style",
+        "intended": "square|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5733440518379211,
+        "off_support": 0.03125
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7422655820846558,
+        "off_support": 0.03125
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6639984846115112,
+        "off_support": 0.125
+      }
+    ],
+    "holdout": null
+  },
+  "remap": {
+    "n_keys": 27,
+    "probes": [
+      {
+        "probe": "D0_exact",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 1.0,
+        "conf": 0.9966828227043152,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5503634214401245,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7094221711158752,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D3_opaque",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 0.96875,
+        "conf": 0.9780213832855225,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D4_nl_template",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.49919790029525757,
+        "off_support": 0.15625
+      },
+      {
+        "probe": "D5_nl_free",
+        "text": "please show circle in red sitting toward the left side, still camera",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.7633275985717773,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D6_nl_zh",
+        "text": "\u5de6\u4fa7\u7684\u7ea2\u8272\u5706\u5f62\uff0c\u9ad8\u8d28\u91cf\uff0c\u6241\u5e73\u98ce\u683c",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.8940790295600891,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7_wrong",
+        "text": "a crimson circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.8996129035949707,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7b_human_remap",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|blue|left",
+        "in_train": true,
+        "hit": 0.0,
+        "conf": 0.9916979670524597,
+        "off_support": 0.0
+      }
+    ],
+    "holdout": null
+  },
+  "para_battery": {
+    "n_keys": 27,
+    "probes": [
+      {
+        "probe": "D0_exact",
+        "text": "[PE] subject=circle | color=red | layout=left | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": true,
+        "hit": 0.96875,
+        "conf": 0.9963752627372742,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D1_reorder",
+        "text": "[PE] color=red|subject=circle|layout=left|quality=hq|style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.653010904788971,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D2_typo",
+        "text": "[PE] subject=circle | color=red | layout=lefx | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.03125,
+        "conf": 0.7927869558334351,
+        "off_support": 0.0625
+      },
+      {
+        "probe": "D3_opaque",
+        "text": "[PE] subject=s1 | color=c1 | layout=p1 | quality=hq | style=flat",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.8794028162956238,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D4_nl_template",
+        "text": "a red circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.5711342096328735,
+        "off_support": 0.0625
+      },
+      {
+        "probe": "D5_nl_free",
+        "text": "please show circle in red sitting toward the left side, still camera",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.8812947273254395,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D6_nl_zh",
+        "text": "\u5de6\u4fa7\u7684\u7ea2\u8272\u5706\u5f62\uff0c\u9ad8\u8d28\u91cf\uff0c\u6241\u5e73\u98ce\u683c",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.9137758612632751,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D7_wrong",
+        "text": "a crimson circle on the left, high quality, flat style",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.0,
+        "conf": 0.6664063930511475,
+        "off_support": 0.03125
+      },
+      {
+        "probe": "D5b_0",
+        "text": "red circle left",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.5625,
+        "conf": 0.8546761274337769,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D5b_1",
+        "text": "high-quality circle, red, placed left",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 1.0,
+        "conf": 0.8825399875640869,
+        "off_support": 0.0
+      },
+      {
+        "probe": "D5b_2",
+        "text": "flat illustration of red circle to the left",
+        "intended": "circle|red|left",
+        "in_train": false,
+        "hit": 0.15625,
+        "conf": 0.9871504306793213,
+        "off_support": 0.0
+      }
+    ],
+    "holdout": null
+  }
+}

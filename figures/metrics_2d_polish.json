@@ -1,0 +1,11 @@
+{
+  "exact_hit": 1.0,
+  "para_hit": 0.0,
+  "typo_hit": 0.0,
+  "hole_in_hole": 0.0,
+  "north_str_to_south": 1.0,
+  "south_str_to_north": 1.0,
+  "mass_train_north": 0.5333333333333333,
+  "mass_gen_north": 0.4305694305694306,
+  "avg_pe_hit_ne": 0.0
+}

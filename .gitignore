@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+fonts/*.otf
+_pdf_build/
+
+# internal cluster tooling and run output
+cluster_submit/
+scripts/
+traces/
+figures/*.log
+figures/*.bak
+figures/*.pt

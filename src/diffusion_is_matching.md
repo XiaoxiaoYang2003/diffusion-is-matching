@@ -207,11 +207,11 @@ Extra behavior can also come from outside \(\mathcal{L}\): a text encoder traine
 
 ## Conclusion
 
-Line the papers up and the chain is complete. The best denoiser is the score of the noisy conditional distribution [1], [5]. The loss is a likelihood bound, so lowering it moves the model toward that distribution [11], [13]. An accurate score gives an accurate sampler [14]. On a finite dataset the target is the training set, split into one drawer per condition [10], [23]. New samples come from the network’s inductive bias acting on that target [31], [33].
+The papers already name the distribution that training matches. Denoising fits the score of the noisy conditional [1], [5]. The loss bounds the likelihood, so lowering it moves the model toward that distribution [11], [13]. Once the score is close, the samples are close too [14]. With a finite training set, that distribution is the set itself, one drawer for each condition [10], [23]. A sample can look new and still be this same target, passed through the network’s inductive bias [31], [33].
 
-Line the experiments up and the same chain is visible. Exact keys that were trained with a mode bring that mode back. Strings that never appeared next to it usually miss. Missing modes stay missing. Mass follows counts. Held-out cells fall toward trained ones.
+The experiments show the same thing at a size you can check by eye. A key trained with a mode brings that mode back. A string that never appeared beside it usually misses. A mode left out of the data stays missing. Samples follow the training counts. A held-out cell falls toward a cell that was trained.
 
-If a system should treat a paraphrase as the same request, or should build a combination it never saw, that behavior has to enter through something the matching loss can see: the data, the way \(c\) is written and encoded, or an objective written for that behavior.
+Under this loss, a paraphrase and an unseen combination are different requests. For the model to treat them as the request you meant, that fact has to be visible to the match: in the data, in how \(c\) is written and encoded, or in an objective written for it.
 
 ---
 
